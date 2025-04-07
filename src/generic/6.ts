@@ -7,16 +7,20 @@
   Виправте тип у аргументі функції так, щоб не було помилок типу.
 */
 
+// task-07.ts
+
 type User = {
   name: string;
   surname: string;
   email: string;
   password: string;
+};
+
+function createOrUpdateUser(initialValues: Partial<User>) {
+ 
+  console.log('Updating user with:', initialValues);
 }
 
-function createOrUpdateUser(initialValues: User) {
-  // Оновлення користувача
-}
 
 createOrUpdateUser({ email: 'user@mail.com', password: 'password123' });
 
